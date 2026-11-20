@@ -1,0 +1,2 @@
+# 本复现只使用 Python 标准库和 Pillow。
+Pillow

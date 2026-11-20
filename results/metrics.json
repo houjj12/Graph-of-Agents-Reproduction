@@ -1,0 +1,22 @@
+{
+  "single_best": {
+    "accuracy": 0.9,
+    "macro_f1": 0.8641
+  },
+  "all_six": {
+    "accuracy": 0.85,
+    "macro_f1": 0.8343
+  },
+  "random_three": {
+    "accuracy": 0.625,
+    "macro_f1": 0.6105
+  },
+  "goa_max": {
+    "accuracy": 0.875,
+    "macro_f1": 0.8471
+  },
+  "goa_mean": {
+    "accuracy": 0.825,
+    "macro_f1": 0.7953
+  }
+}
