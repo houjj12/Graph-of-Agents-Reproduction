@@ -1,0 +1,32 @@
+{
+  "by_domain_accuracy": {
+    "general": {
+      "single_best": 0.882,
+      "all_six": 0.9,
+      "random_three": 0.896,
+      "goa_max": 0.884,
+      "goa_mean": 0.89
+    },
+    "coding": {
+      "single_best": 0.9,
+      "all_six": 0.904,
+      "random_three": 0.9,
+      "goa_max": 0.916,
+      "goa_mean": 0.91
+    },
+    "medical": {
+      "single_best": 0.902,
+      "all_six": 0.924,
+      "random_three": 0.924,
+      "goa_max": 0.93,
+      "goa_mean": 0.934
+    },
+    "math": {
+      "single_best": 0.994,
+      "all_six": 0.998,
+      "random_three": 0.998,
+      "goa_max": 0.996,
+      "goa_mean": 0.996
+    }
+  }
+}

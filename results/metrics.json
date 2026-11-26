@@ -1,22 +1,22 @@
 {
   "single_best": {
-    "accuracy": 0.9,
-    "macro_f1": 0.8641
+    "accuracy": 0.9195,
+    "macro_f1": 0.9194
   },
   "all_six": {
-    "accuracy": 0.85,
-    "macro_f1": 0.8343
+    "accuracy": 0.9315,
+    "macro_f1": 0.9315
   },
   "random_three": {
-    "accuracy": 0.625,
-    "macro_f1": 0.6105
+    "accuracy": 0.9295,
+    "macro_f1": 0.9295
   },
   "goa_max": {
-    "accuracy": 0.875,
-    "macro_f1": 0.8471
+    "accuracy": 0.9315,
+    "macro_f1": 0.9314
   },
   "goa_mean": {
-    "accuracy": 0.825,
-    "macro_f1": 0.7953
+    "accuracy": 0.9325,
+    "macro_f1": 0.9324
   }
 }

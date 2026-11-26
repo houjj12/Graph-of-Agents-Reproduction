@@ -1,0 +1,107 @@
+{
+  "generated_on": "2026-11-25",
+  "seed": 20261125,
+  "total_questions": 2000,
+  "counts_by_source": {
+    "MMLU": 500,
+    "GSM8K": 500,
+    "C-Eval": 500,
+    "MedQA": 500
+  },
+  "counts_by_domain": {
+    "general": 500,
+    "math": 500,
+    "coding": 500,
+    "medical": 500
+  },
+  "unique_stems": 2000,
+  "dataset_sha256": "869a98b71886bb364ebd443179f0d4ca367f8d96ee6217daf82057980ed24d3d",
+  "sources": {
+    "MMLU": {
+      "dataset": "cais/mmlu",
+      "split": "test",
+      "subjects": [
+        "philosophy",
+        "high_school_world_history",
+        "high_school_geography",
+        "global_facts",
+        "sociology"
+      ],
+      "source_rows": {
+        "philosophy": 311,
+        "high_school_world_history": 237,
+        "high_school_geography": 198,
+        "global_facts": 100,
+        "sociology": 201
+      },
+      "sampled": 500,
+      "urls": [
+        "https://hf-mirror.com/datasets/cais/mmlu/resolve/main/philosophy/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/cais/mmlu/resolve/main/high_school_world_history/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/cais/mmlu/resolve/main/high_school_geography/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/cais/mmlu/resolve/main/global_facts/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/cais/mmlu/resolve/main/sociology/test-00000-of-00001.parquet?download=true"
+      ]
+    },
+    "C-Eval": {
+      "dataset": "ceval/ceval-exam",
+      "split": "test",
+      "subjects": [
+        "college_programming",
+        "computer_architecture",
+        "computer_network",
+        "operating_system",
+        "discrete_mathematics"
+      ],
+      "source_rows": {
+        "college_programming": 342,
+        "computer_architecture": 193,
+        "computer_network": 171,
+        "operating_system": 179,
+        "discrete_mathematics": 153
+      },
+      "sampled": 500,
+      "urls": [
+        "https://hf-mirror.com/datasets/ceval/ceval-exam/resolve/main/college_programming/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/ceval/ceval-exam/resolve/main/computer_architecture/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/ceval/ceval-exam/resolve/main/computer_network/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/ceval/ceval-exam/resolve/main/operating_system/test-00000-of-00001.parquet?download=true",
+        "https://hf-mirror.com/datasets/ceval/ceval-exam/resolve/main/discrete_mathematics/test-00000-of-00001.parquet?download=true"
+      ]
+    },
+    "MedQA": {
+      "dataset": "GBaker/MedQA-USMLE-4-options",
+      "split": "test",
+      "subjects": [
+        "USMLE"
+      ],
+      "source_rows": {
+        "USMLE": 1273
+      },
+      "sampled": 500,
+      "urls": [
+        "https://hf-mirror.com/datasets/GBaker/MedQA-USMLE-4-options/resolve/main/phrases_no_exclude_test.jsonl?download=true"
+      ]
+    },
+    "GSM8K": {
+      "dataset": "openai/grade-school-math",
+      "split": "test",
+      "subjects": [
+        "grade_school_math"
+      ],
+      "source_rows": {
+        "grade_school_math": 1319
+      },
+      "sampled": 500,
+      "urls": [
+        "https://codeload.github.com/openai/grade-school-math/zip/refs/heads/master"
+      ]
+    }
+  },
+  "notes": [
+    "Each source contributes exactly 500 questions from test splits.",
+    "Option order is deterministically shuffled for every question.",
+    "GSM8K is open-ended in the original dataset; its gold numeric answer is converted to a four-option question with deterministic numeric distractors.",
+    "MMLU is mapped to general knowledge, C-Eval computer subjects to coding, MedQA to medical, and GSM8K to math."
+  ]
+}

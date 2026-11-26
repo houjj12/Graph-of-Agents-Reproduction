@@ -1,2 +1,6 @@
-# 本复现只使用 Python 标准库和 Pillow。
+# 运行评估和绘制结果图
 Pillow
+requests
+
+# 重建公开数据集时读取 Parquet 文件
+pyarrow

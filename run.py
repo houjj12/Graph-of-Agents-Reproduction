@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from src.evaluate import main
+from src.faithful_goa import main
 
 
 if __name__ == "__main__":

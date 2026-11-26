@@ -1,0 +1,83 @@
+{
+  "prompt_version": "faithful-goa-v1",
+  "questions": 2000,
+  "calls": 29948,
+  "top_k": 3,
+  "tau": 0.05,
+  "meta_model": "deepseek-v4-pro",
+  "model_map": {
+    "MathAgent": {
+      "model": "deepseek-reasoner",
+      "domain": "mathematics",
+      "task": "mathematical reasoning and calculation",
+      "size": "reasoning-oriented model",
+      "temperature": 0.2,
+      "max_tokens": 1024
+    },
+    "CodeAgent": {
+      "model": "deepseek-coder",
+      "domain": "coding and computer science",
+      "task": "programming, algorithms, and software questions",
+      "size": "coding-oriented model",
+      "temperature": 0.2,
+      "max_tokens": 512
+    },
+    "MedAgent": {
+      "model": "deepseek-v4-pro[1m]",
+      "domain": "biomedical and clinical medicine",
+      "task": "medical examination question answering",
+      "size": "long-context general model",
+      "temperature": 0.2,
+      "max_tokens": 512
+    },
+    "GeneralAgent": {
+      "model": "deepseek-chat",
+      "domain": "general knowledge",
+      "task": "broad knowledge and natural language understanding",
+      "size": "general-purpose model",
+      "temperature": 0.4,
+      "max_tokens": 512
+    },
+    "ReasonAgent": {
+      "model": "deepseek-v4-pro",
+      "domain": "cross-domain reasoning",
+      "task": "multi-step reasoning and option elimination",
+      "size": "reasoning-oriented model",
+      "temperature": 0.3,
+      "max_tokens": 512
+    },
+    "NoisyAgent": {
+      "model": "deepseek-v4-flash",
+      "domain": "general knowledge",
+      "task": "fast but less reliable question answering",
+      "size": "compact fast model",
+      "temperature": 1.0,
+      "max_tokens": 512
+    }
+  },
+  "prompt_tokens": 9094915,
+  "completion_tokens": 1778301,
+  "total_tokens": 10873216,
+  "metrics": {
+    "single_best": {
+      "accuracy": 0.9195,
+      "macro_f1": 0.9194
+    },
+    "all_six": {
+      "accuracy": 0.9315,
+      "macro_f1": 0.9315
+    },
+    "random_three": {
+      "accuracy": 0.9295,
+      "macro_f1": 0.9295
+    },
+    "goa_max": {
+      "accuracy": 0.9315,
+      "macro_f1": 0.9314
+    },
+    "goa_mean": {
+      "accuracy": 0.9325,
+      "macro_f1": 0.9324
+    }
+  }
+}
